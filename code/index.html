@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="top">
+        <p class="top__text">IP Address Tracker</p>
+        <form class="top__form" action="index.html" method="post">
+          <input
+            type="text"
+            name="ip"
+            placeholder="Search for any IP address or domain"
+            class="top__input"
+          />
+          <button type="submit" class="top__button">
+            <img src="../images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+        <div class="top__details">
+          <div class="top__details__item1">
+            <p class="top__details--text">IP ADDRESS</p>
+            <p class="top__details--value" id="address"></p>
+          </div>
+          <div class="top__details--item">
+            <p class="top__details--text">LOCATION</p>
+            <p class="top__details--value" id="location"></p>
+          </div>
+          <div class="top__details--item">
+            <p class="top__details--text">TIMEZONE</p>
+            <p class="top__details--value">
+              UTC <span class="utc" id="utc"></span>
+            </p>
+          </div>
+          <div class="top__details--item">
+            <p class="top__details--text">ISP</p>
+            <p class="top__details--value" id="isp"></p>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+  </body>
+</html>
